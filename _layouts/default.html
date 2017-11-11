@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "es" }}" class="no-js">
+    {% include head.html %}
+	<body>
+		<div class="container">
+			<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+			{% include sidebar.html %}
+			<div id="theGrid" class="main">
+				{{ content }}
+			</div>
+		</div><!-- /container -->
+		<script src="{{ "/assets/js/classie.js" | relative_url }}"></script>
+		<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+	</body>
+</html>
